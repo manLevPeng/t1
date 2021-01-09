@@ -135,38 +135,38 @@ body >.info{
     color: var(--red-color);
     font-size: var(--font-medium);
 }
-.upNext .tittle {
+.UpNext .tittle {
     font-size: var(--font-medium);
     color: var(--grey-dark-color);
     margin-bottom: cala(var(--padding)/2);
 }
-.upNext .item{
+.UpNext .item{
     display: flex;
     margin-top: var(--padding);
 }
-.upNext .item .img{
+.UpNext .item .img{
     flex: 1 1 35%;
     margin-right: var(--padding);
 }
-.upNext .item .img img{
+.UpNext .item .img img{
     width: 100%;
 }
-.upNext .item .info{
+.UpNext .item .info{
     flex: 1 1 60%;
 }
-.upNext .item .moreBt{
+.UpNext .item .moreBt{
     height: 100%;
     flex: 1 1 5%;
 }
-.upNext .item .info {
+.UpNext .item .info {
     display: flex;
     flex-direction: column;
 }
-.upNext .item .info .tittle{
+.UpNext .item .info .tittle{
     font-size: var(--font-small);
 }
-.upNext .item .info .name,
-.upNext .item .info .views{
+.UpNext .item .info .CHname,
+.UpNext .item .info .views{
     font-size: var(--font-micro);
     color: var(--grey-dark-color);
 }
