@@ -1,0 +1,40 @@
+<!--TEST page / Ver. 2-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST page.2</title>
+
+<script>
+    function login(){
+        var loginID = fo.here.value;
+        var lodinPW = fo.pw.value;
+        if (loginID == "kid"){
+            if(lodinPW == "kps")   alert("로그인 되었습니다.");
+            else                   alert("비밀번호를 잘못 입력하셨습니다.");
+        }
+        else                       alert("아이디 또는 비밀번호를 잘못 입력하셨습니다.");
+    }
+    
+    function enterpress() {
+        if (window.event.keyCode == 13) {
+            login();
+        }
+    };
+</script>
+</head>
+<body onload="document.getElementById('here').focus();">
+    <h1 tittle="h1태그로 작성되었습니다">hello world!</h1>
+    <hr><p>안녕하세요!<br>지금 보고있는 문서는 테스트 문서입니다.</p><hr>
+    <p>로그인 해 봅시다. 키 아이디는 'kid', 키 패스워드는 'kps'입니다.</p><hr>
+   
+    <h3>로그인</h3>
+    <form id="fo" method="get" onkeyup="enterpress()">           <!--폼 속성 수정-->
+        ID       : <input type="text" size="15" value="" id="here"><br>
+        Password : <input type="password" size="15" value="" id="pw">
+        <input type="button" value=" 로그인 " onclick="login()">
+    </form>
+   
+</body>
+</html>
